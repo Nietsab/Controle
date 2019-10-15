@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block  title %}Modification d'un article {% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Modifier l'article : {{article.libelle}}</h1>
+
+        {{ form_start(form) }}
+
+        {{ form_widget(form )}}
+
+        <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+
+        {{ form_end(form )}}
+    </div>
+{% endblock %} 
+
+{% block javascripts %}
+    <script src="/js/article.js"></script>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fiche Article{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h1>Fiche Article n° </h1>
+
+            <div class="card mb-3">
+                <h3 class="card-header">{{ article.libelle }}</h3>
+                <img style="height: 200px; width: 100%; display: block;" src="{{article.image}}" alt="Card image">
+                <div class="card-body">
+                    <p class="card-text">{{article.description}}</p>
+                    <p>{{article.prix}}
+                     €</p>
+                </div>
+            </div>
+        </div>
+{% endblock %}
